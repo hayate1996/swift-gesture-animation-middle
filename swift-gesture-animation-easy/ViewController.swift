@@ -10,37 +10,52 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var leftFrame: UIView!
-    var rightFrame: UIView!
+    var leftUpFrame: UIView!
+    var rightUpFrame: UIView!
+    var leftDownFrame: UIView!
+    var rightDownFrame: UIView!
     var rect:UIView!
-
+    let duration: NSTimeInterval = 0.5
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         configureViews()
         configureGestures()
-//        callAnimation()
     }
 
     func configureViews()
     {
-        leftFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
-        leftFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
-        leftFrame.layer.borderWidth = 1.0
-        leftFrame.center = CGPointMake(self.view.center.x - 100, self.view.center.y)
+        leftUpFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
+        leftUpFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
+        leftUpFrame.layer.borderWidth = 1.0
+        leftUpFrame.center = CGPointMake(self.view.center.x - 100, self.view.center.y - 100)
         
-        rightFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
-        rightFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
-        rightFrame.layer.borderWidth = 1.0
-        rightFrame.center = CGPointMake(self.view.center.x + 100, self.view.center.y)
+        rightUpFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
+        rightUpFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
+        rightUpFrame.layer.borderWidth = 1.0
+        rightUpFrame.center = CGPointMake(self.view.center.x + 100, self.view.center.y - 100)
+        
+        leftDownFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
+        leftDownFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
+        leftDownFrame.layer.borderWidth = 1.0
+        leftDownFrame.center = CGPointMake(self.view.center.x - 100, self.view.center.y + 100)
+        
+        rightDownFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
+        rightDownFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
+        rightDownFrame.layer.borderWidth = 1.0
+        rightDownFrame.center = CGPointMake(self.view.center.x + 100, self.view.center.y + 100)
+        
         
         rect = UIView(frame: CGRectMake(0, 0, 75, 75))
         rect.backgroundColor = UIColor.blueColor()
-        rect.center = leftFrame.center
+        rect.center = leftUpFrame.center
         
-        self.view.addSubview(leftFrame)
-        self.view.addSubview(rightFrame)
+        self.view.addSubview(leftUpFrame)
+        self.view.addSubview(rightUpFrame)
+        self.view.addSubview(leftDownFrame)
+        self.view.addSubview(rightDownFrame)
         self.view.addSubview(rect)
     }
     
@@ -53,20 +68,62 @@ class ViewController: UIViewController {
         var swipeGestureRecognizerRight = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeRightAnimation"))
         swipeGestureRecognizerRight.direction = .Right
         rect.addGestureRecognizer(swipeGestureRecognizerRight)
+        
+        var swipeGestureRecognizerUp = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeUpAnimation"))
+        swipeGestureRecognizerUp.direction = .Up
+        rect.addGestureRecognizer(swipeGestureRecognizerUp)
+        
+        var swipeGestureRecognizerDown = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeDownAnimation"))
+        swipeGestureRecognizerDown.direction = .Down
+        rect.addGestureRecognizer(swipeGestureRecognizerDown)
     }
     
     func callSwipeLeftAnimation()
     {
-        UIView.animateWithDuration(1.0, animations: { () -> Void in
-            self.rect.center = self.leftFrame.center
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            if self.rect.center == self.rightUpFrame.center {
+                self.rect.center = self.leftUpFrame.center
+            }
+            else if self.rect.center == self.rightDownFrame.center {
+                self.rect.center = self.leftDownFrame.center
+            }
         })
     }
     
     func callSwipeRightAnimation()
     {
-        UIView.animateWithDuration(1.0, animations: { () -> Void in
-            self.rect.center = self.rightFrame.center
-            })
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            if self.rect.center == self.leftUpFrame.center {
+                self.rect.center = self.rightUpFrame.center
+            }
+            else if self.rect.center == self.leftDownFrame.center {
+                self.rect.center = self.rightDownFrame.center
+            }
+        })
+    }
+    
+    func callSwipeUpAnimation()
+    {
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            if self.rect.center == self.leftDownFrame.center {
+                self.rect.center = self.leftUpFrame.center
+            }
+            else if self.rect.center == self.rightDownFrame.center {
+                self.rect.center = self.rightUpFrame.center
+            }
+        })
+    }
+    
+    func callSwipeDownAnimation()
+    {
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            if self.rect.center == self.leftUpFrame.center {
+                self.rect.center = self.leftDownFrame.center
+            }
+            else if self.rect.center == self.rightUpFrame.center {
+                self.rect.center = self.rightDownFrame.center
+            }
+        })
     }
     
     override func didReceiveMemoryWarning() {
