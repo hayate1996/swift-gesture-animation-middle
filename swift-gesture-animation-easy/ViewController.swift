@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var frame1: UIView!
-    var frame2: UIView!
+    var leftFrame: UIView!
+    var rightFrame: UIView!
     var rect:UIView!
 
     override func viewDidLoad() {
@@ -20,32 +20,53 @@ class ViewController: UIViewController {
         
         configureViews()
         configureGestures()
+//        callAnimation()
     }
 
     func configureViews()
     {
-        frame1 = UIView(frame: CGRectMake(0, 0, 80, 80))
-        frame1.layer.borderColor = UIColor.lightGrayColor().CGColor
-        frame1.layer.borderWidth = 1.0
-        frame1.center = CGPointMake(self.view.center.x - 50, self.view.center.y)
+        leftFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
+        leftFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
+        leftFrame.layer.borderWidth = 1.0
+        leftFrame.center = CGPointMake(self.view.center.x - 100, self.view.center.y)
         
-        frame2 = UIView(frame: CGRectMake(0, 0, 80, 80))
-        frame2.layer.borderColor = UIColor.lightGrayColor().CGColor
-        frame2.layer.borderWidth = 1.0
-        frame2.center = CGPointMake(self.view.center.x + 50, self.view.center.y)
+        rightFrame = UIView(frame: CGRectMake(0, 0, 80, 80))
+        rightFrame.layer.borderColor = UIColor.lightGrayColor().CGColor
+        rightFrame.layer.borderWidth = 1.0
+        rightFrame.center = CGPointMake(self.view.center.x + 100, self.view.center.y)
         
         rect = UIView(frame: CGRectMake(0, 0, 75, 75))
         rect.backgroundColor = UIColor.blueColor()
-        rect.center = frame1.center
+        rect.center = leftFrame.center
         
-        self.view.addSubview(frame1)
-        self.view.addSubview(frame2)
+        self.view.addSubview(leftFrame)
+        self.view.addSubview(rightFrame)
         self.view.addSubview(rect)
     }
     
     func configureGestures()
     {
+        var swipeGestureRecognizerLeft = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeLeftAnimation"))
+        swipeGestureRecognizerLeft.direction = .Left
+        rect.addGestureRecognizer(swipeGestureRecognizerLeft)
         
+        var swipeGestureRecognizerRight = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeRightAnimation"))
+        swipeGestureRecognizerRight.direction = .Right
+        rect.addGestureRecognizer(swipeGestureRecognizerRight)
+    }
+    
+    func callSwipeLeftAnimation()
+    {
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+            self.rect.center = self.leftFrame.center
+        })
+    }
+    
+    func callSwipeRightAnimation()
+    {
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+            self.rect.center = self.rightFrame.center
+            })
     }
     
     override func didReceiveMemoryWarning() {
