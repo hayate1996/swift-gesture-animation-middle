@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6EC80791B1AE1DC00662CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EC80781B1AE1DC00662CBB /* AppDelegate.swift */; };
+		A6EC807C1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6EC807A1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodeld */; };
+		A6EC807E1B1AE1DC00662CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EC807D1B1AE1DC00662CBB /* ViewController.swift */; };
+		A6EC80811B1AE1DC00662CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EC807F1B1AE1DC00662CBB /* Main.storyboard */; };
+		A6EC80831B1AE1DC00662CBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EC80821B1AE1DC00662CBB /* Images.xcassets */; };
+		A6EC80861B1AE1DC00662CBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EC80841B1AE1DC00662CBB /* LaunchScreen.xib */; };
+		A6EC80921B1AE1DC00662CBB /* swift_gesture_animation_easyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EC80911B1AE1DC00662CBB /* swift_gesture_animation_easyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6EC808C1B1AE1DC00662CBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6EC806B1B1AE1DC00662CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6EC80721B1AE1DC00662CBB;
+			remoteInfo = "swift-gesture-animation-easy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6EC80731B1AE1DC00662CBB /* swift-gesture-animation-easy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-gesture-animation-easy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EC80771B1AE1DC00662CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6EC80781B1AE1DC00662CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6EC807B1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swift_gesture_animation_easy.xcdatamodel; sourceTree = "<group>"; };
+		A6EC807D1B1AE1DC00662CBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6EC80801B1AE1DC00662CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6EC80821B1AE1DC00662CBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6EC80851B1AE1DC00662CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A6EC808B1B1AE1DC00662CBB /* swift-gesture-animation-easyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-gesture-animation-easyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EC80901B1AE1DC00662CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6EC80911B1AE1DC00662CBB /* swift_gesture_animation_easyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_gesture_animation_easyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6EC80701B1AE1DC00662CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EC80881B1AE1DC00662CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6EC806A1B1AE1DC00662CBB = {
+			isa = PBXGroup;
+			children = (
+				A6EC80751B1AE1DC00662CBB /* swift-gesture-animation-easy */,
+				A6EC808E1B1AE1DC00662CBB /* swift-gesture-animation-easyTests */,
+				A6EC80741B1AE1DC00662CBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6EC80741B1AE1DC00662CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6EC80731B1AE1DC00662CBB /* swift-gesture-animation-easy.app */,
+				A6EC808B1B1AE1DC00662CBB /* swift-gesture-animation-easyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6EC80751B1AE1DC00662CBB /* swift-gesture-animation-easy */ = {
+			isa = PBXGroup;
+			children = (
+				A6EC80781B1AE1DC00662CBB /* AppDelegate.swift */,
+				A6EC807D1B1AE1DC00662CBB /* ViewController.swift */,
+				A6EC807F1B1AE1DC00662CBB /* Main.storyboard */,
+				A6EC80821B1AE1DC00662CBB /* Images.xcassets */,
+				A6EC80841B1AE1DC00662CBB /* LaunchScreen.xib */,
+				A6EC807A1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodeld */,
+				A6EC80761B1AE1DC00662CBB /* Supporting Files */,
+			);
+			path = "swift-gesture-animation-easy";
+			sourceTree = "<group>";
+		};
+		A6EC80761B1AE1DC00662CBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6EC80771B1AE1DC00662CBB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6EC808E1B1AE1DC00662CBB /* swift-gesture-animation-easyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6EC80911B1AE1DC00662CBB /* swift_gesture_animation_easyTests.swift */,
+				A6EC808F1B1AE1DC00662CBB /* Supporting Files */,
+			);
+			path = "swift-gesture-animation-easyTests";
+			sourceTree = "<group>";
+		};
+		A6EC808F1B1AE1DC00662CBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6EC80901B1AE1DC00662CBB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6EC80721B1AE1DC00662CBB /* swift-gesture-animation-easy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EC80951B1AE1DC00662CBB /* Build configuration list for PBXNativeTarget "swift-gesture-animation-easy" */;
+			buildPhases = (
+				A6EC806F1B1AE1DC00662CBB /* Sources */,
+				A6EC80701B1AE1DC00662CBB /* Frameworks */,
+				A6EC80711B1AE1DC00662CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-gesture-animation-easy";
+			productName = "swift-gesture-animation-easy";
+			productReference = A6EC80731B1AE1DC00662CBB /* swift-gesture-animation-easy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6EC808A1B1AE1DC00662CBB /* swift-gesture-animation-easyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EC80981B1AE1DC00662CBB /* Build configuration list for PBXNativeTarget "swift-gesture-animation-easyTests" */;
+			buildPhases = (
+				A6EC80871B1AE1DC00662CBB /* Sources */,
+				A6EC80881B1AE1DC00662CBB /* Frameworks */,
+				A6EC80891B1AE1DC00662CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6EC808D1B1AE1DC00662CBB /* PBXTargetDependency */,
+			);
+			name = "swift-gesture-animation-easyTests";
+			productName = "swift-gesture-animation-easyTests";
+			productReference = A6EC808B1B1AE1DC00662CBB /* swift-gesture-animation-easyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6EC806B1B1AE1DC00662CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "hiro nagami";
+				TargetAttributes = {
+					A6EC80721B1AE1DC00662CBB = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					A6EC808A1B1AE1DC00662CBB = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = A6EC80721B1AE1DC00662CBB;
+					};
+				};
+			};
+			buildConfigurationList = A6EC806E1B1AE1DC00662CBB /* Build configuration list for PBXProject "swift-gesture-animation-easy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6EC806A1B1AE1DC00662CBB;
+			productRefGroup = A6EC80741B1AE1DC00662CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6EC80721B1AE1DC00662CBB /* swift-gesture-animation-easy */,
+				A6EC808A1B1AE1DC00662CBB /* swift-gesture-animation-easyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6EC80711B1AE1DC00662CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EC80811B1AE1DC00662CBB /* Main.storyboard in Resources */,
+				A6EC80861B1AE1DC00662CBB /* LaunchScreen.xib in Resources */,
+				A6EC80831B1AE1DC00662CBB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EC80891B1AE1DC00662CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6EC806F1B1AE1DC00662CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EC807E1B1AE1DC00662CBB /* ViewController.swift in Sources */,
+				A6EC807C1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodeld in Sources */,
+				A6EC80791B1AE1DC00662CBB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EC80871B1AE1DC00662CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EC80921B1AE1DC00662CBB /* swift_gesture_animation_easyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6EC808D1B1AE1DC00662CBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6EC80721B1AE1DC00662CBB /* swift-gesture-animation-easy */;
+			targetProxy = A6EC808C1B1AE1DC00662CBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6EC807F1B1AE1DC00662CBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6EC80801B1AE1DC00662CBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6EC80841B1AE1DC00662CBB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6EC80851B1AE1DC00662CBB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6EC80931B1AE1DC00662CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6EC80941B1AE1DC00662CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6EC80961B1AE1DC00662CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift-gesture-animation-easy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6EC80971B1AE1DC00662CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift-gesture-animation-easy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A6EC80991B1AE1DC00662CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "swift-gesture-animation-easyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-gesture-animation-easy.app/swift-gesture-animation-easy";
+			};
+			name = Debug;
+		};
+		A6EC809A1B1AE1DC00662CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "swift-gesture-animation-easyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-gesture-animation-easy.app/swift-gesture-animation-easy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6EC806E1B1AE1DC00662CBB /* Build configuration list for PBXProject "swift-gesture-animation-easy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EC80931B1AE1DC00662CBB /* Debug */,
+				A6EC80941B1AE1DC00662CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6EC80951B1AE1DC00662CBB /* Build configuration list for PBXNativeTarget "swift-gesture-animation-easy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EC80961B1AE1DC00662CBB /* Debug */,
+				A6EC80971B1AE1DC00662CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A6EC80981B1AE1DC00662CBB /* Build configuration list for PBXNativeTarget "swift-gesture-animation-easyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EC80991B1AE1DC00662CBB /* Debug */,
+				A6EC809A1B1AE1DC00662CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6EC807A1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6EC807B1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodel */,
+			);
+			currentVersion = A6EC807B1B1AE1DC00662CBB /* swift_gesture_animation_easy.xcdatamodel */;
+			path = swift_gesture_animation_easy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6EC806B1B1AE1DC00662CBB /* Project object */;
+}
