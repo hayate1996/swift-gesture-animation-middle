@@ -61,33 +61,9 @@ class ViewController: UIViewController {
     
     func configureGestures()
     {
-        var swipeGestureRecognizerLeft = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeLeftAnimation"))
-        swipeGestureRecognizerLeft.direction = .Left
-        rect.addGestureRecognizer(swipeGestureRecognizerLeft)
-        
         var swipeGestureRecognizerRight = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeRightAnimation"))
         swipeGestureRecognizerRight.direction = .Right
         rect.addGestureRecognizer(swipeGestureRecognizerRight)
-        
-        var swipeGestureRecognizerUp = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeUpAnimation"))
-        swipeGestureRecognizerUp.direction = .Up
-        rect.addGestureRecognizer(swipeGestureRecognizerUp)
-        
-        var swipeGestureRecognizerDown = UISwipeGestureRecognizer(target: self, action: Selector("callSwipeDownAnimation"))
-        swipeGestureRecognizerDown.direction = .Down
-        rect.addGestureRecognizer(swipeGestureRecognizerDown)
-    }
-    
-    func callSwipeLeftAnimation()
-    {
-        UIView.animateWithDuration(duration, animations: { () -> Void in
-            if self.rect.center == self.rightUpFrame.center {
-                self.rect.center = self.leftUpFrame.center
-            }
-            else if self.rect.center == self.rightDownFrame.center {
-                self.rect.center = self.leftDownFrame.center
-            }
-        })
     }
     
     func callSwipeRightAnimation()
@@ -102,28 +78,20 @@ class ViewController: UIViewController {
         })
     }
     
+    func callSwipeLeftAnimation()
+    {
+    
+    }
+    
+    
     func callSwipeUpAnimation()
     {
-        UIView.animateWithDuration(duration, animations: { () -> Void in
-            if self.rect.center == self.leftDownFrame.center {
-                self.rect.center = self.leftUpFrame.center
-            }
-            else if self.rect.center == self.rightDownFrame.center {
-                self.rect.center = self.rightUpFrame.center
-            }
-        })
+        
     }
     
     func callSwipeDownAnimation()
     {
-        UIView.animateWithDuration(duration, animations: { () -> Void in
-            if self.rect.center == self.leftUpFrame.center {
-                self.rect.center = self.leftDownFrame.center
-            }
-            else if self.rect.center == self.rightUpFrame.center {
-                self.rect.center = self.rightDownFrame.center
-            }
-        })
+        
     }
     
     override func didReceiveMemoryWarning() {
